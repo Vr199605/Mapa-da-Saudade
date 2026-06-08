@@ -6,8 +6,8 @@ function pad(n: number) {
   return String(n).padStart(2, "0");
 }
 
-// Target: June 22, 2025 (set your actual reunion date here)
-const TARGET_DATE = new Date("2025-06-22T00:00:00");
+// Target: June 18, 2025 (set your actual reunion date here)
+const TARGET_DATE = new Date("2025-06-18T00:00:00");
 
 export default function Countdown() {
   const ref = useRef(null);
