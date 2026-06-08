@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+:root {
+  --white: #FDFCFB;
+  --off-white: #F8F4EF;
+  --champagne: #F5E6D0;
+  --rose-gold: #C9917A;
+  --rose-light: #E8BFB0;
+  --gold: #C9A96E;
+  --gold-light: #E8D5A3;
+  --deep: #1A1410;
+  --warm-dark: #2D1F18;
+  --text-muted: #8B7355;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--deep);
+  color: var(--white);
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display { font-family: 'Cormorant Garamond', serif; }
+.font-script { font-family: 'Great Vibes', cursive; }
+.font-body { font-family: 'Jost', sans-serif; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--deep); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+@keyframes draw-line {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+.map-line { stroke-dasharray: 8 4; animation: draw-line 3s ease-in-out forwards; }
